@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drag & Drop</title>
+	<style>
+		#source {
+			background-color: yellow;
+			width: 100px;
+			height: 100px;
+			cursor: move;
+			color: black;
+		}
+
+		#target {
+			background-color: blue;
+			width: 150px;
+			height: 150px;
+			padding: 5px;
+			margin-bottom: 5px;
+			color: white;
+		}
+	</style>
+
+	<script>
+		window.onload = function () {
+
+			var source = documebt.getElementById("source");
+
+			source.addEventlistener('dragstar', function (evt) {
+				this.style.border = "3px dotted #000";
+
+				etv.dataTransfer.effectallowed = "move";
+
+				evt.dataTransfer.setdata("Text", this.id);
+
+			}, false);
+
+			source.addEventlistener("dragend", function (evt) {
+				this.style.border = "";
+			}, false);
+
+			var target = getElementById("target");
