@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>background-size</title>
+	<style>
+		div {
+			width: 600px;
+			height: 400px;
+			margin: 10px;
+			border: 1px solid black;
+			background-repeat: no-repeat;
+		}
+
+		#id1 {
+			background-image: url("wolf.png");
+
+			/* Размер фона установлен явно в пикселях */
+			-moz-background-size: 500px 342px;
+			-o-background-size: 500px 342px;
+			-webkit-background-size: 500px 342px;
+			background-size: 500px 342px;
+		}
+
+		#id2 {
+			background-image: url("wolf.png");
+
+			/* фон занимает половину высоты и ширины элемента */
+			-moz-background-size: 50% 50%;
+			-o-background-size: 50% 50%;
+			-webkit-background-size: 50% 50%;
+			background-size: 50% 50%;
+		}
+	</style>
+</head>
+<body>
+	<!--
+		background-size - свойствао для масштабирования фона
+
+		В CSS2.1 размер фонового изображения нельзя установить явно.
+		В CSS3 background-size определяет размер фонового изображения.
+		Размер фонового изображения может быть указан в пикселях или в процентах.
+	-->
+
+	<div id="id1"></div>
+	<div id="id2"></div>
+</body>
+</html>
+

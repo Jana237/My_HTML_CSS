@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Attribute selectors</title>
+	
+	<style>
+
+		/* правила для всех input*/
+		input {
+			margin:10px;
+		}
+
+		/* правила для input с атрибутом required */
+		input[required] {
+			border: 1px solid green;
+		}
+	</style>
+</head>
+<body>
+	<from>
+		<input type="text" required="required" />
+		<br />
+		<input type="password" />
+		<br />
+		<input type="submit" />
+	</from>
+</body>
+</html>
+
