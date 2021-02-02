@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Контакты</title>
+	<title>Фильм Безумный Макс</title>
 	<meta name="description" content="КиноБаза - это портал о кино" />
 	<meta name="keywords" content="фильмы, фильмы онлайн, hd" />
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+	<!--  -->
+	
 	<div class="main">
 		
 		<div class="header">
@@ -18,6 +20,8 @@
 					<h2>Кино - наша страсть!</h2>
 				</div>
 			</div>
+
+			<!-- MENU -->
 
 			<div class="menubar">
 				
@@ -30,13 +34,15 @@
 				</ul>
 
 			</div>
-
 		</div>
 
+		
 
 		<div class="site_content">
 			
 			<div class="sidebar_container">
+				
+				
 
 				<div class="sidebar">
 					<h2>Поиск</h2>
@@ -45,6 +51,8 @@
 						<input type="submit" class="btn" value="найти" />
 					</form>
 				</div>
+
+				
 
 				<div class="sidebar">
 					<h2>Вход</h2>
@@ -58,14 +66,15 @@
 						</div>
 
 					</form>
-				</div>
-
+				</div>	
 				<div class="sidebar">
 					<h2>Новости</h2>
-					<span>31.02.2018</span>
+					<span>31.02.20181</span>
 					<p>Мы запустили расширенный поиск</p>
 					<a href="#">читать</a>
 				</div>
+
+				<!-- RATING -->
 
 				<div class="sidebar">
 					<h2>Рейтинг фильмов</h2>
@@ -73,7 +82,7 @@
 						<li><a href="show.html">Интерстеллар</a><span class="rating_sidebar">8.1</span></li>
 						<li><a href="show02.html">Матрица</a><span class="rating_sidebar">8.0</span></li>
 						<li><a href="show01.html">Безумный макс</a><span class="rating_sidebar">7.5</span></li>
-						<li><a href="show03.html">Облачный атлас</a><span class="rating_sidebar">7.4</span></li>
+						<li><a href="#">Облачный атлас</a><span class="rating_sidebar">7.4</span></li>
 					</ul>
 				</div>
 
@@ -82,32 +91,67 @@
 					<ul>
 						<li><a href="#">Во все тяжкие</a><span class="rating_sidebar">8.9</span></li>
 						<li><a href="#">Силиконовая долина</a><span class="rating_sidebar">8.3</span></li>
-						<li><a href="show.html">Секретные материалы</a><span class="rating_sidebar">8.2</span></li>
+						<li><a href="show1.html">Секретные материалы</a><span class="rating_sidebar">8.2</span></li>
 						<li><a href="#">Ходячие мертвецы</a><span class="rating_sidebar">8.0</span></li>
 					</ul>
 				</div>
 
+
 			</div>
 
 			<div class="content">
-				
-				<h1>Новые фильмы</h1>
-				<p>Отправить ваш отзыв о портале КиноМонстр</p>
 
-				<div class="send send_contact">
-					<form method="post" action="#" id="contact">
+				<h1>Безумный Макс</h1>
+
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/an_MiUmpgs0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+				<div class="info_film_page">
+					<span class="label">рейтинг: </span><span class="value">7.8/ 10</span>
+					<span class="label">год: </span><span class="value">2015</span>
+					<span class="label">режиссер: </span><span class="value">Джордж Миллер</span>
+				</div>
+				<hr>
+				<h2>Описание Безумного Макса</h2>
+				<div class="descriptions_film">
+					<img src="assets/img/max.png">
+					Преследуемый призраками беспокойного прошлого Макс уверен, что лучший способ выжить - скитаться в одиночестве. Несмотря на это, он присоединяется к бунтарям, бегущим через всю пустыню на боевой фуре, под предводительством отчаянной Фуриосы.
+
+					Они сбежали из Цитадели, страдающей от тирании Несмертного Джо, и забрали у него кое-что очень ценное. Разъярённый диктатор бросает все свои силы в погоню за мятежниками, ступая на тропу войны - дорогу ярости.
+				</div>
+
+				<hr>
+				<h2>Отзыв об фильме</h2>
+
+				<div class="reviews">
+					<div class="review_name">
+						Dima
+					</div>
+					<div class="review_text">
+						Культовые фильмы, а особенно франшизы очень редко получают вменяемые продолжения. 
+					</div>
+				</div>
+
+				<div class="reviews">
+					<div class="review_name">
+						Ron
+					</div>
+					<div class="review_text">
+						Данный фильм является одним из моих любимых. Первоначально не представлял себе никого, кроме Мэла Гибсона, в роли Макса, но после просмотра свое мнение изменил.
+					</div>
+				</div>
+
+				<div class="send">
+					<form method="post" action="#" id="review">
 						<input type="text" name="review_name" placeholder="ваше имя">
-						 <input type="text" name="review_email" placeholder="ваше email">
-						 <textarea name="review_text"></textarea>
-						 <input class="btn" type="submit" value="Отправить">
+						<textarea name="review_text"></textarea>
+						<input class="btn" type="submit" value="отправить">
 					</form>
 				</div>
 
 			</div>
-
 		</div>
 
-	<div class="footer">
+		<div class="footer">
 		<p>
 			<a href="index.html">Главная</a> |
 			<a href="films.html">Фильмы</a> |
@@ -116,10 +160,9 @@
 			<a href="contact.html">Контакты</a>
 		</p>
 		<p>kinopoisk.ru</p>
-	</div>
+	    </div>
 
 	</div>
 
 </body>
 </html>
-					
